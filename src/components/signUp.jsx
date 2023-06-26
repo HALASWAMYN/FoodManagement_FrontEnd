@@ -8,7 +8,7 @@ const SignUp = () => {
     let [password, setPassword] = useState("")
     let [name, setName] = useState("")
     let [mobile, setMobile] = useState("")
-    let [confirm, setConfirm] = useState("") 
+    let [confirm, setConfirm] = useState("")
 
     let navigate = useNavigate()
 
@@ -27,7 +27,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className="signUp">
+        <div className="signUp p-5 card mt-5 m-5 border border-4 border-dark ">
             <h1>SignUp Page</h1>
             <div className="signUp_form w-25 ">
                 <form action="" onSubmit={handleSubmit}>
@@ -37,8 +37,8 @@ const SignUp = () => {
                     </div>
                     <div className="mobile_number p-2">
                         <input type="tel" max={10} min="10" placeholder="Enter Phone Number" className="form-control"
-                            value={mobile} onChange={(e) => setMobile(e.target.value)} 
-                           minLength='10' maxLength='10' />
+                            value={mobile} onChange={(e) => setMobile(e.target.value)}
+                            minLength='10' maxLength='10' />
                     </div>
                     <div className="email p-2">
                         <input type="email" placeholder="Enter email" className="form-control"
@@ -53,7 +53,7 @@ const SignUp = () => {
                             value={confirm} onChange={(e) => setConfirm(e.target.value)} />
                     </div>
                     <div className="signUp_button">
-                        <button className="btn btn-dark">SignUp</button></div>
+                        <button className="btn btn-dark ">SignUp</button></div>
                     <div className="login_button">
                         <Link to="/" className="btn btn-outline-dark">Login</Link>
                     </div>
